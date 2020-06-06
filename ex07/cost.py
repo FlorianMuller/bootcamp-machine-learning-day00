@@ -11,7 +11,8 @@ def predict_(x, theta):
         or x.ndim != 2 or theta.ndim != 2
             or theta.shape[1] != 1 or theta.shape[0] != x.shape[1] + 1):
         return None
-    return np.dot(np.c_[np.ones(x.shape[0]), x], theta)
+
+    return np.c_[np.ones(x.shape[0]), x] @ theta
 
 
 def cost_elem_(y, y_hat):

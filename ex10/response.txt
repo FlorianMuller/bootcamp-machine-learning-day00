@@ -1,0 +1,27 @@
+1 - Why do we concatenate a column of ones to the left of the x vector when we use the linear algebra trick?
+To use `np.dot` with the x matrix and the theta vector.
+
+This the colum of ones will be multiplied by theta0, forming the equation:
+= theta0 * 1 + theta1 * x1 + ... + thetaN * xN
+= theta0 + theta1 * x1 + ... + thetaN * xN
+
+In case x has only one column, we have the linear eqution:
+= theta0 * 1 + theta1 * x
+= theta0 + theta1 * x
+(= a + b * x)
+
+
+2 - Why does the cost function square the distances between the data points and their predicted values?
+To make bigger errors even biggers
+
+
+3 - What does the cost function’s output represent?
+The differnece btween our prediction and the real result we've got with our data
+
+
+4 - Toward which value do we want the cost function to tend? What would that mean?
+We want it to tend toward 0. That mean that to have a good prediciton we must minimise the cost
+
+
+5 - Do you understand why are matrix multiplications are not commutative?
+Beacause A * B != B * A ?
